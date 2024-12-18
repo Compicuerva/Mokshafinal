@@ -1,0 +1,223 @@
+/* Estilo para todo el sitio */
+body{
+    font-family: 'Poppins', sans-serif; /* uso fuente importada de google font */
+    margin: 0; 
+    padding: 10px;
+    background-color: rgb(145, 233, 233);
+    color: #333;/*defino color*/
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    padding: 1px;
+    text-align: center;
+}
+
+/* Estilo para el header */
+header{
+    background-color: rgb(228, 176, 176);
+    padding: 2px;/* Espacio interno alrededor del contenido */
+    margin: 1px;
+    border: groove;
+    color: #333;
+    text-align: center;
+    position: sticky; /* Hacemos que el menú se quede fijo al hacer scroll */
+    top: 0px; /* Posicionamos el menú en la parte superior */
+}
+.logo{
+    max-width: 100px;
+    display:flex;/* Usamos flexbox para organizar los elementos */
+    padding: 5px;
+    align-items: center;
+    }
+.titulo{
+    text-decoration-line:underline;
+    color: #333;
+    font-size: 30px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.navbar{
+    margin: 1px;
+    top: 0px;
+    display:contents;
+}
+.menu{
+    list-style: none;/* quita la viñeta */
+    text-decoration: none;
+    padding: 0;
+    background-color:  #984040;
+    width: 100%;
+    margin: 1px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: navajowhite;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block ;
+    text-align: center;
+}
+    
+.menu li a:hover{
+    background-color: #ef8354;
+}
+
+.menu{
+    position: sticky; /* Hacemos que el menú se quede fijo al hacer scroll */
+}
+
+.section{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 50px;
+    width: 100%;
+    background-color: azure;
+    box-shadow: 0 4px 8px rgba(233,23,23);
+}
+
+/* Estilo para el contenedor principal con flex container */
+.contenedor-productos{
+    display: flex; /* organizo las cajas con flexbox */
+    flex-wrap: wrap; /* organizo las cajas por fila */
+    justify-content: space-between; /* doy espacio uniforme entre cajas */
+    padding: 10px;
+
+}
+
+/* Estilo para los productos */
+.productos{
+background-color: azure;
+width: 100%; /* ocupa el 100% del ancho del contenedor */
+margin-bottom: 20px;
+padding: 15px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(233,23,23);
+}
+
+/* Estilo a la imagen */
+.productos img{
+    max-width: 100%; /* imagen ocupa el 100% del contenedor */
+    height: auto;/* mantiene la proporcion de la imagen */
+}
+
+/* Estilo al precio */
+.productos p{
+    font-size: 1rem;
+    color: rgb(30, 90, 67);
+}
+/* Estilo al boton de compra */
+.productos button{
+   background-color: green;
+   color: azure;
+   padding: 10px;
+   cursor: pointer; 
+}
+
+.productos button:hover{/* pseudo-clases le doy efecto cambia el color */
+    background-color: rgb(164, 112, 29);
+ }
+
+ .flexbox-container{
+    display: flex; /* organizo las cajas con flexbox */
+    flex-wrap: wrap; /* organizo las cajas por fila */
+    justify-content: space-between; /* doy espacio uniforme entre cajas */
+    padding: 10px;
+}
+
+/* Estilo a la imagen */
+.item img{
+    max-width: 100%; /* imagen ocupa el 100% del contenedor */
+    height: auto;/* mantiene la proporcion de la imagen */
+}
+ .item{
+    background-color: azure;
+    width: 20%; /* ocupa el 10% del ancho del contenedor */
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(233,23,23);
+ }
+
+.item button:hover{
+background-color: rgb(228, 176, 176);
+} 
+
+ footer {
+    padding: 5px;
+    background-color: antiquewhite;
+    text-align: left;
+    margin-top: 150px;
+}
+form{
+    padding: 30px;
+}
+.mail{
+    padding: 20px;
+    background-color: bisque;
+    color: #007bff;
+}
+
+/* grid para layout general */
+.grid-layout{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contenido contenido"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px ;
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #3c80b3;
+}
+
+.contenido{
+    grid-area: contenido;
+    background-color: #7bbce4;
+    padding: 10px;
+    }
+
+.footer {
+    grid-area: footer;
+    background-color: #9ad1f1;
+}
+
+/* 
+flexbox para el contenido interno */
+.flexbox-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.flexbox-item{
+    background-color: #444;
+    color: aliceblue;
+    padding: 10px;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .item{
+        width: 10%;
+        height: auto;
+        overflow: hidden;
+        padding: 0px;
+    }
+}

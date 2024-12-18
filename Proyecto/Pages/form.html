@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"><!-- Enlace para importar fuentes de google -->
+   
+        <title>Moksha Joyas</title> <!-- nombre de la página -->
+        <link rel="shortcut icon" href="../Images/logo.ico" type="image/x-icon"> <!-- favicon icono de la pagina -->
+        <link rel="stylesheet" href="../CSS/style.css"> <!-- Enlace a mi archivo css -->
+
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <a href="../index.html">
+                <div class="logo" >
+                    <img src="../Images/logo.png" class="Logo" width="60px">
+                    <h1 class="titulo"> Moksha.Joyas</h1>
+                </div>
+            </a>
+            
+        </nav>   
+    </header>
+<div>
+    <h1 class="titulo">Por favor completar el siguiente formulario para cualquier consulta</h1>
+    <form action="https://formspree.io/f/mrbggeep" method="post">
+    <br>
+    <label for="nombre">Ingresa tu nombre</label>
+        <br>
+    <input type="text" name="nombre" id="nombre" required>
+        <br>   
+            
+    <label for="email">Ingresa tu mail</label>
+    <br>
+    <input type="email" name="email" id="email" required>
+            <br>
+    <label for="mensaje">Agrega tu mensaje</label>
+    <br>
+    <textarea name="mensaje" id="mensaje" required cols="24" rows="6"></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+    </form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
